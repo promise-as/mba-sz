@@ -1,0 +1,312 @@
+$txt-color: #304da4;
+$bg-color: #f55436;
+%in-b {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+}
+%clearfix {
+  zoom: 1;
+  &:after {
+    clear: both;
+  }
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+}
+%one {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+// 文本显示多少行就省略
+@mixin ells($row) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $row;
+  -webkit-box-orient: vertical;
+}
+input,
+textarea,
+select {
+  font-family: "微软雅黑";
+}
+input[type="text"] {
+  text-indent: 1em;
+}
+input[type="submit"] {
+  border: none;
+}
+input[type="text"],
+select {
+  border: none;
+  outline: none;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  &::-webkit-input-placeholder {
+    color: #999;
+    font-size: inherit;
+  }
+  &:-moz-placeholder {
+    color: #999;
+    font-size: inherit;
+  }
+  &::-moz-placeholder {
+    color: #999;
+    font-size: inherit;
+  }
+  &:-ms-input-placeholder {
+    color: #999;
+    font-size: inherit;
+  }
+}
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+a,
+i {
+  @extend %in-b;
+}
+i {
+  font-style: normal;
+}
+.mba-sz-head {
+  @extend %clearfix;
+  padding-bottom: 26px;
+  .head-l {
+    float: left;
+    .l-logo {
+      width: 162px;
+      height: 50px;
+      padding-top: 10px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .head-r {
+    float: right;
+    padding-top: 29px;
+    font-size: 16px;
+    line-height: 32px;
+    .r-nav {
+      float: left;
+      color: #333333;
+      ul {
+        @extend %clearfix;
+        li {
+          float: left;
+          padding: 0 30px;
+          a {
+            &:hover {
+              color: $bg-color;
+            }
+          }
+        }
+      }
+    }
+    .r-tel {
+      float: left;
+      .tel-zx {
+        color: #ffffff;
+        padding: 0 15px;
+        background-image: linear-gradient(-74deg, #f1423b 0%, #f96432 100%);
+        box-shadow: 2px 2px 7px 0px rgba(241, 85, 32, 0.4);
+        border-radius: 6px;
+        vertical-align: middle;
+        margin: 0 20px;
+      }
+      span {
+        font-size: 22px;
+        font-weight: bold;
+        color: #f15520;
+        vertical-align: middle;
+        padding-left: 25px;
+        background: url(../images/tel.png) no-repeat center left;
+      }
+    }
+  }
+}
+.mba-sz-banner {
+  height: 552px;
+  .wrap {
+    padding: 364px 0 0 76px;
+    box-sizing: border-box;
+  }
+  a {
+    width: 181px;
+    height: 49px;
+    margin-right: 24px;
+  }
+}
+.mba-sz-title {
+  text-align: center;
+  color: #333333;
+  p {
+    margin: 0 0 16px;
+    padding: 0;
+    font-size: 38px;
+    line-height: 38px;
+    span {
+      color: #f86132;
+    }
+  }
+}
+.mba-sz-btn {
+  background-image: linear-gradient(-74deg, #f1423b 0%, #f96432 100%);
+  box-shadow: 2px 2px 7px 0px rgba(241, 85, 32, 0.4);
+  border-radius: 7px;
+  font-size: 18px;
+  color: #ffffff;
+}
+.mba-sz-bk {
+  position: relative;
+  padding: 340px 0 65px;
+  .bk-plan {
+    width: 1130px;
+    height: 372px;
+    padding: 22px 27px;
+    box-sizing: border-box;
+    background: url(../images/bg_1.png) no-repeat center;
+    position: absolute;
+    top: -87px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    @extend %clearfix;
+    .plan-item {
+      width: 32%;
+      text-align: center;
+      float: left;
+      padding: 10px 15px 20px;
+      box-sizing: border-box;
+      .icon {
+        width: 54px;
+        height: 56px;
+        line-height: 52px;
+        font-size: 20px;
+        color: #fff;
+        background: url(../images/icon_1.png) no-repeat;
+        text-align: center;
+        &.red {
+          background: url(../images/icon_2.png) no-repeat;
+        }
+      }
+      .item-title {
+        font-size: 16px;
+        line-height: 28px;
+        color: #333333;
+        padding-bottom: 13px;
+        @extend %one;
+      }
+      .item-btn {
+        height: 33px;
+        line-height: 30px;
+        padding: 0 13px;
+        font-size: 16px;
+        color: $bg-color;
+        border: 1px solid $bg-color;
+        box-sizing: border-box;
+        box-shadow: 2px 2px 7px 0px rgba(241, 85, 32, 0.4);
+        border-radius: 7px;
+        &:hover {
+          background-image: linear-gradient(-74deg, #f1423b 0%, #f96432 100%);
+          color: #fff;
+        }
+      }
+      &:nth-of-type(2) {
+        width: 36%;
+      }
+      &:nth-of-type(5) {
+        width: 36%;
+      }
+    }
+  }
+  .sign-in {
+    padding: 42px 0 30px 50px;
+    box-sizing: border-box;
+    input{
+      width: 170px;
+      height: 48px;
+      line-height: 48px;
+      background-color: #f3f8ff;
+      border-radius: 7px;
+      border: solid 1px #a6afca;
+      box-sizing: border-box;
+      font-size: 14px;
+      margin-right: 14px;
+    }
+    .mba-sz-btn{
+      border: none;
+      font-size: 18px;
+    }
+  }
+  .bk-hint {
+    font-size: 16px;
+    line-height: 28px;
+    color: #666666;
+    text-align: center;
+    em {
+      color: #f2463b;
+    }
+  }
+}
+.mba-sz-schools{
+  padding: 52px 0 40px;
+  background: url(../images/bg_2.png) no-repeat center;
+  .schools-cont{
+    @extend %clearfix;
+    padding-top: 24px;
+    &.wrap{
+      width: 1100px;
+    }
+    .cont-item{
+      float: left;
+      width: 254px;
+      font-size: 16px;
+      line-height: 28px;
+      color: #444444;
+      text-align: center;
+      margin-right: 28px;
+      margin-bottom: 35px;
+      .item-title{
+        @extend %one;
+        padding-top: 7px;
+      }
+      &:nth-of-type(4n+4){
+        margin-right: 0;
+      }
+    }
+  }
+  .schools-btn{
+    display: block;
+    width: 292px;
+    height: 68px;
+    background: url(../images/btn_1.png) no-repeat;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 48px;
+    color: #ffffff;
+    text-align: center;
+    .icon-l{
+      width: 16px;
+      height: 16px;
+      background: url(../images/icon_3.png) no-repeat;
+      vertical-align: middle;
+    }
+    .icon-r{
+      width: 14px;
+      height: 11px;
+      background: url(../images/icon_4.png) no-repeat;
+      vertical-align: middle;
+    }
+  }
+}
+.mba-sz-lx{
+  padding-top: 83px;
+}
