@@ -278,7 +278,7 @@ i {
           box-sizing: border-box;
 }
 
-.mba-sz-bk .sign-in input {
+.mba-sz-bk .sign-in input, .mba-sz-bk .sign-in select {
   width: 170px;
   height: 48px;
   line-height: 48px;
@@ -289,6 +289,11 @@ i {
           box-sizing: border-box;
   font-size: 14px;
   margin-right: 14px;
+}
+
+.mba-sz-bk .sign-in select {
+  padding: 0 14px;
+  background: url(https://img.thea.cn/public/platform/thea/201912/hbj/mba-sz/images/icon_12.png) no-repeat 92% center #f3f8ff;
 }
 
 .mba-sz-bk .sign-in .mba-sz-btn {
@@ -426,8 +431,8 @@ i {
 }
 
 .mba-sz-lx .tab-head ul li.cur {
-  background-color: #f3f8ff;
-  border: solid 1px #d0dbeb;
+  background-color: #dfeafb;
+  border: solid 1px #c5d6ee;
   color: #2f4ca2;
   font-weight: bold;
   margin-top: -1px;
@@ -861,6 +866,7 @@ i {
   right: 0;
   bottom: 0;
   z-index: 30;
+  display: none;
 }
 
 .mba-sz-mask .masklayer {
@@ -885,7 +891,7 @@ i {
   padding: 40px 32px 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: url(../images/form.png) no-repeat center;
+  background: url(https://img.thea.cn/public/platform/thea/201912/hbj/mba-sz/images/form.png) no-repeat center;
 }
 
 .mba-sz-mask .mask-cont .mab-sz-close {
@@ -896,7 +902,7 @@ i {
   right: 24px;
   cursor: pointer;
   margin-right: 0;
-  background: url(../images/close.png) no-repeat;
+  background: url(https://img.thea.cn/public/platform/thea/201912/hbj/mba-sz/images/close.png) no-repeat;
 }
 
 .mba-sz-mask .mask-cont .mba-sz-title {
@@ -931,7 +937,7 @@ i {
 
 .mba-sz-mask .mask-cont .sign-in select {
   padding: 0 16px;
-  background: url(../images/icon_12.png) no-repeat 96% center #fff;
+  background: url(https://img.thea.cn/public/platform/thea/201912/hbj/mba-sz/images/icon_12.png) no-repeat 96% center #fff;
 }
 
 .mba-sz-mask .mask-cont .sign-in select:nth-of-type(2) {

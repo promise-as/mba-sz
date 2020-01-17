@@ -7,14 +7,13 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>MBA双证集合</title>
   <link rel="stylesheet" href="https://img.thea.cn/public/css/base.css">
-  <!-- <link rel="stylesheet" href="https://img.thea.cn/public/platform/thea/201912/hbj/mba-sz/css/index.css"> -->
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://img.thea.cn/public/platform/thea/201912/hbj/mba-sz/css/index.css">
 
   <script src="https://img.thea.cn/public/js/jquery-1.12.3.min.js"></script>
 </head>
 
 <body>
-  <div class="mba-sz-head wrap defaults_dataid" data-id="2-0-126-0-0-0-1-国际高中择校">
+  <div class="mba-sz-head wrap defaults_dataid" data-id="3-0-0-0-0-0-1-测试">
     <div class="head-l">
       <div class="l-logo">
         <img src="https://img.thea.cn/public/platform/thea/201912/hbj/mba-sz/images/logo.png" alt="">
@@ -23,15 +22,15 @@
     <div class="head-r">
       <div class="r-nav">
         <ul>
-          <li><a href="#europe">欧洲院校</a></li>
-          <li><a href="#russia">俄罗斯院校</a></li>
-          <li><a href="#philippines">菲律宾院校</a></li>
-          <li><a href="#others">其他院校</a></li>
-          <li><a href="#zsjz">招生简章</a></li>
+          <li><a href="#europe" class="oz">欧洲院校</a></li>
+          <li><a href="#russia" class="oz">俄罗斯院校</a></li>
+          <li><a href="#philippines" class="oz">菲律宾院校</a></li>
+          <li><a href="#others" class="oz">其他院校</a></li>
+          <li><a href="#zsjz" class="oz">招生简章</a></li>
         </ul>
       </div>
       <div class="r-tel">
-        <a href="" class="tel-zx">试听咨询</a>
+        <a href="javascript:void(0)" onclick="ECHATCustomMiniChat()" class="tel-zx">试听咨询</a>
         <span>18988787129</span>
       </div>
     </div>
@@ -39,8 +38,8 @@
   <div class="mba-sz-banner"
     style="background: url(https://img.thea.cn/public/platform/thea/201912/hbj/mba-sz/images/banner.png) no-repeat center;">
     <div class="wrap">
-      <a href=""></a>
-      <a href=""></a>
+      <a href="javascript:void(0)" onclick="ECHATCustomMiniChat()"></a>
+      <a href="javascript:void(0)" onclick="ECHATCustomMiniChat()"></a>
     </div>
   </div>
   <div class="mba-sz-bk">
@@ -48,32 +47,32 @@
       <div class="plan-item">
         <i class="icon">Q1</i>
         <div class="item-title">大专学历，可以申请双证MBA吗？</div>
-        <a href="" class="item-btn">解决方案</a>
+        <a href="javascript:void(0)" onclick="ECHATCustomMiniChat()" class="item-btn">解决方案</a>
       </div>
       <div class="plan-item">
         <i class="icon red">Q2</i>
         <div class="item-title">本科学历，想要快速提升学历？</div>
-        <a href="" class="item-btn">解决方案</a>
+        <a href="javascript:void(0)" onclick="ECHATCustomMiniChat()" class="item-btn">解决方案</a>
       </div>
       <div class="plan-item">
         <i class="icon">Q3</i>
         <div class="item-title">英语不好，需要先提升语言成绩吗？</div>
-        <a href="" class="item-btn">解决方案</a>
+        <a href="javascript:void(0)" onclick="ECHATCustomMiniChat()" class="item-btn">解决方案</a>
       </div>
       <div class="plan-item">
         <i class="icon">Q4</i>
         <div class="item-title">出境安排？时间多久？会影响工作吗？</div>
-        <a href="" class="item-btn">解决方案</a>
+        <a href="javascript:void(0)" onclick="ECHATCustomMiniChat()" class="item-btn">解决方案</a>
       </div>
       <div class="plan-item">
         <i class="icon">Q5</i>
         <div class="item-title">学位是否正规？能否进行认证?</div>
-        <a href="" class="item-btn">解决方案</a>
+        <a href="javascript:void(0)" onclick="ECHATCustomMiniChat()" class="item-btn">解决方案</a>
       </div>
       <div class="plan-item">
         <i class="icon">Q6</i>
         <div class="item-title">出国手续太繁琐？一条龙服务</div>
-        <a href="" class="item-btn">解决方案</a>
+        <a href="javascript:void(0)" onclick="ECHATCustomMiniChat()" class="item-btn">解决方案</a>
       </div>
     </div>
     <div class="mba-sz-title">
@@ -81,9 +80,27 @@
       <img src="https://img.thea.cn/public/platform/thea/201912/hbj/mba-sz/images/title_1.png" alt="">
     </div>
     <form class="sign-in wrap">
-      <input type="text" placeholder="你目前的学历？" class="user-con">
-      <input type="text" placeholder="你目前工作年限？" class="user-con">
-      <input type="text" placeholder="你目前的英语水平？" class="user-con">
+      <select class="user-con">
+        <option value="你目前的学历？">你目前的学历？</option>
+        <option value="大专学历">大专学历</option>
+        <option value="本科学历">本科学历</option>
+        <option value="硕士学历">硕士学历</option>
+        <option value="其他">其他</option>
+      </select>
+      <select class="user-con">
+        <option value="你目前工作年限？">你目前工作年限？</option>
+        <option value="1-3年">1-3年</option>
+        <option value="3-5年">3-5年</option>
+        <option value="5-10年">5-10年</option>
+        <option value="10年以上">10年以上</option>
+      </select>
+      <select class="user-con">
+        <option value="你目前的英语水平？">你目前的英语水平？</option>
+        <option value="无英语基础">无英语基础</option>
+        <option value="一般（英语4级）">一般（英语4级）</option>
+        <option value="还不错（英语6级）">还不错（英语6级）</option>
+        <option value="没有问题">没有问题</option>
+      </select>
       <input type="text" placeholder="你的姓名" class="user-name">
       <input type="text" placeholder="你的联系方式" class="user-tel">
       <input type="submit" placeholder="立即评测" class="mba-sz-btn">
@@ -119,11 +136,11 @@
         <div class="item-title">加拿大西三一大学</div>
       </div>
       <div class="cont-item">
-        <img src="https://img.thea.cn/public/platform/thea/201912/hbj/mba-sz/images/la.png" alt="">
+        <img src="https://img.thea.cn/public/platform/thea/201912/hbj/mba-sz/images/ald.png" alt="">
         <div class="item-title">法国里昂商学院</div>
       </div>
       <div class="cont-item">
-        <img src="https://img.thea.cn/public/platform/thea/201912/hbj/mba-sz/images/ald.png" alt="">
+        <img src="https://img.thea.cn/public/platform/thea/201912/hbj/mba-sz/images/la.png" alt="">
         <div class="item-title">美国德克萨斯大学阿灵顿商学院</div>
       </div>
       <div class="cont-item">
@@ -131,18 +148,18 @@
         <div class="item-title">美国杜兰大学</div>
       </div>
     </div>
-    <a href="" class="schools-btn">
+    <a href="javascript:void(0);" class="schools-btn popup-btn">
       <i class="icon-l"></i>
       领取院校2020年招生简章
       <i class="icon-r"></i>
     </a>
   </div>
   <div class="mba-sz-lx wrap">
-    <div class="mba-sz-title">
+    <div class="mba-sz-title" id="europe">
       <p>重磅<span>短期留学</span>院校推荐</p>
       <img src="https://img.thea.cn/public/platform/thea/201912/hbj/mba-sz/images/title_1.png" alt="">
     </div>
-    <div class="tab" id="europe">
+    <div class="tab">
       <div class="tab-head">
         <div class="head-title">
           欧洲院校
@@ -179,8 +196,8 @@
               </div>
             </div>
             <div class="r-btn">
-              <a href="" class="mba-sz-btn"><i class="icon"></i>领取招生简章</a>
-              <a href=""><i class="icon"></i>咨询试听课程</a>
+              <a href="javascript:void(0);" class="mba-sz-btn popup-btn"><i class="icon"></i>领取招生简章</a>
+              <a href="javascript:void(0)" onclick="ECHATCustomMiniChat()"><i class="icon"></i>咨询试听课程</a>
             </div>
           </div>
         </div>
@@ -205,8 +222,8 @@
               </div>
             </div>
             <div class="r-btn">
-              <a href="" class="mba-sz-btn"><i class="icon"></i>领取招生简章</a>
-              <a href=""><i class="icon"></i>咨询试听课程</a>
+              <a href="javascript:void(0);" class="mba-sz-btn popup-btn"><i class="icon"></i>领取招生简章</a>
+              <a href="javascript:void(0)" onclick="ECHATCustomMiniChat()"><i class="icon"></i>咨询试听课程</a>
             </div>
           </div>
         </div>
@@ -232,14 +249,14 @@
               </div>
             </div>
             <div class="r-btn">
-              <a href="" class="mba-sz-btn"><i class="icon"></i>领取招生简章</a>
-              <a href=""><i class="icon"></i>咨询试听课程</a>
+              <a href="javascript:void(0);" class="mba-sz-btn popup-btn"><i class="icon"></i>领取招生简章</a>
+              <a href="javascript:void(0)" onclick="ECHATCustomMiniChat()"><i class="icon"></i>咨询试听课程</a>
             </div>
           </div>
         </div>
         <div class="cont-item">
           <div class="item-l">
-            <img src="https://img.thea.cn/public/platform/thea/201912/hbj/mba-sz/images/isg.png" alt="">
+            <img src="https://img.thea.cn/public/platform/thea/201912/hbj/mba-sz/images/mbs.jpg" alt="">
           </div>
           <div class="item-r">
             <div class="r-title"><span>法国MBS商学院</span></div>
@@ -259,8 +276,8 @@
               </div>
             </div>
             <div class="r-btn">
-              <a href="" class="mba-sz-btn"><i class="icon"></i>领取招生简章</a>
-              <a href=""><i class="icon"></i>咨询试听课程</a>
+              <a href="javascript:void(0);" class="mba-sz-btn popup-btn"><i class="icon"></i>领取招生简章</a>
+              <a href="javascript:void(0)" onclick="ECHATCustomMiniChat()"><i class="icon"></i>咨询试听课程</a>
             </div>
           </div>
         </div>
@@ -286,8 +303,8 @@
               </div>
             </div>
             <div class="r-btn">
-              <a href="" class="mba-sz-btn"><i class="icon"></i>领取招生简章</a>
-              <a href=""><i class="icon"></i>咨询试听课程</a>
+              <a href="javascript:void(0);" class="mba-sz-btn popup-btn"><i class="icon"></i>领取招生简章</a>
+              <a href="javascript:void(0)" onclick="ECHATCustomMiniChat()"><i class="icon"></i>咨询试听课程</a>
             </div>
           </div>
         </div>
@@ -326,8 +343,8 @@
               </div>
             </div>
             <div class="r-btn">
-              <a href="" class="mba-sz-btn"><i class="icon"></i>领取招生简章</a>
-              <a href=""><i class="icon"></i>咨询试听课程</a>
+              <a href="javascript:void(0);" class="mba-sz-btn popup-btn"><i class="icon"></i>领取招生简章</a>
+              <a href="javascript:void(0)" onclick="ECHATCustomMiniChat()"><i class="icon"></i>咨询试听课程</a>
             </div>
           </div>
         </div>
@@ -352,8 +369,8 @@
               </div>
             </div>
             <div class="r-btn">
-              <a href="" class="mba-sz-btn"><i class="icon"></i>领取招生简章</a>
-              <a href=""><i class="icon"></i>咨询试听课程</a>
+              <a href="javascript:void(0);" class="mba-sz-btn popup-btn"><i class="icon"></i>领取招生简章</a>
+              <a href="javascript:void(0)" onclick="ECHATCustomMiniChat()"><i class="icon"></i>咨询试听课程</a>
             </div>
           </div>
         </div>
@@ -396,8 +413,8 @@
               </div>
             </div>
             <div class="r-btn">
-              <a href="" class="mba-sz-btn"><i class="icon"></i>领取招生简章</a>
-              <a href=""><i class="icon"></i>咨询试听课程</a>
+              <a href="javascript:void(0);" class="mba-sz-btn popup-btn"><i class="icon"></i>领取招生简章</a>
+              <a href="javascript:void(0)" onclick="ECHATCustomMiniChat()"><i class="icon"></i>咨询试听课程</a>
             </div>
           </div>
         </div>
@@ -422,8 +439,8 @@
               </div>
             </div>
             <div class="r-btn">
-              <a href="" class="mba-sz-btn"><i class="icon"></i>领取招生简章</a>
-              <a href=""><i class="icon"></i>咨询试听课程</a>
+              <a href="javascript:void(0);" class="mba-sz-btn popup-btn"><i class="icon"></i>领取招生简章</a>
+              <a href="javascript:void(0)" onclick="ECHATCustomMiniChat()"><i class="icon"></i>咨询试听课程</a>
             </div>
           </div>
         </div>
@@ -448,8 +465,8 @@
               </div>
             </div>
             <div class="r-btn">
-              <a href="" class="mba-sz-btn"><i class="icon"></i>领取招生简章</a>
-              <a href=""><i class="icon"></i>咨询试听课程</a>
+              <a href="javascript:void(0);" class="mba-sz-btn popup-btn"><i class="icon"></i>领取招生简章</a>
+              <a href="javascript:void(0)" onclick="ECHATCustomMiniChat()"><i class="icon"></i>咨询试听课程</a>
             </div>
           </div>
         </div>
@@ -474,8 +491,8 @@
               </div>
             </div>
             <div class="r-btn">
-              <a href="" class="mba-sz-btn"><i class="icon"></i>领取招生简章</a>
-              <a href=""><i class="icon"></i>咨询试听课程</a>
+              <a href="javascript:void(0);" class="mba-sz-btn popup-btn"><i class="icon"></i>领取招生简章</a>
+              <a href="javascript:void(0)" onclick="ECHATCustomMiniChat()"><i class="icon"></i>咨询试听课程</a>
             </div>
           </div>
         </div>
@@ -500,8 +517,8 @@
               </div>
             </div>
             <div class="r-btn">
-              <a href="" class="mba-sz-btn"><i class="icon"></i>领取招生简章</a>
-              <a href=""><i class="icon"></i>咨询试听课程</a>
+              <a href="javascript:void(0);" class="mba-sz-btn popup-btn"><i class="icon"></i>领取招生简章</a>
+              <a href="javascript:void(0)" onclick="ECHATCustomMiniChat()"><i class="icon"></i>咨询试听课程</a>
             </div>
           </div>
         </div>
@@ -542,14 +559,14 @@
               </div>
             </div>
             <div class="r-btn">
-              <a href="" class="mba-sz-btn"><i class="icon"></i>领取招生简章</a>
-              <a href=""><i class="icon"></i>咨询试听课程</a>
+              <a href="javascript:void(0);" class="mba-sz-btn popup-btn"><i class="icon"></i>领取招生简章</a>
+              <a href="javascript:void(0)" onclick="ECHATCustomMiniChat()"><i class="icon"></i>咨询试听课程</a>
             </div>
           </div>
         </div>
         <div class="cont-item">
           <div class="item-l">
-            <img src="https://img.thea.cn/public/platform/thea/201912/hbj/mba-sz/images/cx.png" alt="">
+            <img src="https://img.thea.cn/public/platform/thea/201912/hbj/mba-sz/images/qn.png" alt="">
           </div>
           <div class="item-r">
             <div class="r-title"><span>韩国全南大学</span></div>
@@ -568,8 +585,8 @@
               </div>
             </div>
             <div class="r-btn">
-              <a href="" class="mba-sz-btn"><i class="icon"></i>领取招生简章</a>
-              <a href=""><i class="icon"></i>咨询试听课程</a>
+              <a href="javascript:void(0);" class="mba-sz-btn popup-btn"><i class="icon"></i>领取招生简章</a>
+              <a href="javascript:void(0)" onclick="ECHATCustomMiniChat()"><i class="icon"></i>咨询试听课程</a>
             </div>
           </div>
         </div>
@@ -595,8 +612,8 @@
               </div>
             </div>
             <div class="r-btn">
-              <a href="" class="mba-sz-btn"><i class="icon"></i>领取招生简章</a>
-              <a href=""><i class="icon"></i>咨询试听课程</a>
+              <a href="javascript:void(0);" class="mba-sz-btn popup-btn"><i class="icon"></i>领取招生简章</a>
+              <a href="javascript:void(0)" onclick="ECHATCustomMiniChat()"><i class="icon"></i>咨询试听课程</a>
             </div>
           </div>
         </div>
@@ -622,8 +639,8 @@
               </div>
             </div>
             <div class="r-btn">
-              <a href="" class="mba-sz-btn"><i class="icon"></i>领取招生简章</a>
-              <a href=""><i class="icon"></i>咨询试听课程</a>
+              <a href="javascript:void(0);" class="mba-sz-btn popup-btn"><i class="icon"></i>领取招生简章</a>
+              <a href="javascript:void(0)" onclick="ECHATCustomMiniChat()"><i class="icon"></i>咨询试听课程</a>
             </div>
           </div>
         </div>
@@ -644,76 +661,76 @@
         <img src="https://img.thea.cn/public/platform/thea/201912/hbj/mba-sz/images/num_1.png" alt="">
         <div class="item-en">Organizational</div>
         <div class="item-cn">组织行为学</div>
-        <a href="">申请试听</a>
+        <a href="javascript:void(0)" class="popup-btn2">申请试听</a>
       </div>
       <div class="cont-item">
         <img src="https://img.thea.cn/public/platform/thea/201912/hbj/mba-sz/images/num_2.png" alt="">
         <div class="item-en">Fnancial</div>
         <div class="item-cn">公司金融</div>
-        <a href="">申请试听</a>
+        <a href="javascript:void(0)" class="popup-btn2">申请试听</a>
       </div>
       <div class="cont-item">
         <img src="https://img.thea.cn/public/platform/thea/201912/hbj/mba-sz/images/num_3.png" alt="">
         <div class="item-en">Marketing</div>
         <div class="item-cn">市场营销</div>
-        <a href="">申请试听</a>
+        <a href="javascript:void(0)" class="popup-btn2">申请试听</a>
       </div>
       <div class="cont-item">
         <img src="https://img.thea.cn/public/platform/thea/201912/hbj/mba-sz/images/num_4.png" alt="">
         <div class="item-en">Business</div>
         <div class="item-cn">商务信息学</div>
-        <a href="">申请试听</a>
+        <a href="javascript:void(0)" class="popup-btn2">申请试听</a>
       </div>
       <div class="cont-item">
         <img src="https://img.thea.cn/public/platform/thea/201912/hbj/mba-sz/images/num_5.png" alt="">
         <div class="item-en">Fnancial</div>
         <div class="item-cn">财务管理</div>
-        <a href="">申请试听</a>
+        <a href="javascript:void(0)" class="popup-btn2">申请试听</a>
       </div>
       <div class="cont-item">
         <img src="https://img.thea.cn/public/platform/thea/201912/hbj/mba-sz/images/num_6.png" alt="">
         <div class="item-en">Management</div>
         <div class="item-cn">管理经济学</div>
-        <a href="">申请试听</a>
+        <a href="javascript:void(0)" class="popup-btn2">申请试听</a>
       </div>
       <div class="cont-item">
         <img src="https://img.thea.cn/public/platform/thea/201912/hbj/mba-sz/images/num_7.png" alt="">
         <div class="item-en">Statistics</div>
         <div class="item-cn">商务统计学</div>
-        <a href="">申请试听</a>
+        <a href="javascript:void(0)" class="popup-btn2">申请试听</a>
       </div>
       <div class="cont-item">
         <img src="https://img.thea.cn/public/platform/thea/201912/hbj/mba-sz/images/num_8.png" alt="">
         <div class="item-en">Strategic</div>
         <div class="item-cn">战略管理</div>
-        <a href="">申请试听</a>
+        <a href="javascript:void(0)" class="popup-btn2">申请试听</a>
       </div>
       <div class="cont-item">
         <img src="https://img.thea.cn/public/platform/thea/201912/hbj/mba-sz/images/num_9.png" alt="">
         <div class="item-en">Operations</div>
         <div class="item-cn">运营管理</div>
-        <a href="">申请试听</a>
+        <a href="javascript:void(0)" class="popup-btn2">申请试听</a>
       </div>
       <div class="cont-item">
         <img src="https://img.thea.cn/public/platform/thea/201912/hbj/mba-sz/images/num_10.png" alt="">
         <div class="item-en">Project</div>
         <div class="item-cn">项目管理</div>
-        <a href="">申请试听</a>
+        <a href="javascript:void(0)" class="popup-btn2">申请试听</a>
       </div>
       <div class="cont-item">
         <img src="https://img.thea.cn/public/platform/thea/201912/hbj/mba-sz/images/num_11.png" alt="">
         <div class="item-en">International</div>
         <div class="item-cn">国际贸易</div>
-        <a href="">申请试听</a>
+        <a href="javascript:void(0)" class="popup-btn2">申请试听</a>
       </div>
       <div class="cont-item">
         <img src="https://img.thea.cn/public/platform/thea/201912/hbj/mba-sz/images/num_12.png" alt="">
         <div class="item-en">Human</div>
         <div class="item-cn">人力资源管理</div>
-        <a href="">申请试听</a>
+        <a href="javascript:void(0)" class="popup-btn2">申请试听</a>
       </div>
     </div>
-    <a href="" class="courses-btn">
+    <a href="javascript:void(0)" onclick="ECHATCustomMiniChat()" class="courses-btn">
       了解更多<i class="icon"></i>
     </a>
   </div>
@@ -806,7 +823,7 @@
         </div>
       </div>
     </div>
-    <a href="" class="worker-btn">
+    <a href="javascript:void(0)" onclick="ECHATCustomMiniChat()" class="worker-btn">
       了解更多<i class="icon"></i>
     </a>
   </div>
@@ -820,7 +837,7 @@
     </p>
     <p>版权所有 深圳市诺达教育股份有限公司 © <a href="https://www.thea.cn">www.thea.cn</a> All Rights Reserved 粤ICP备10032899号</p>
   </div>
-  <!-- 弹窗 -->
+  <!-- 弹窗-简章 -->
   <div class="mba-sz-mask" id="popup">
     <div class="masklayer"></div>
     <div class="mask-cont">
@@ -840,6 +857,65 @@
           <option value="法国里昂商学院">法国里昂商学院</option>
           <option value="美国德克萨斯大学阿灵顿商学院">美国德克萨斯大学阿灵顿商学院</option>
           <option value="美国杜兰大学">美国杜兰大学</option>
+          <option value="法国巴黎IPAG高等商学院">法国巴黎IPAG高等商学院</option>
+          <option value="法国ICD商学院MBA">法国ICD商学院MBA</option>
+          <option value="法国ISG高等管理学院">法国ISG高等管理学院</option>
+          <option value="法国MBS商学院">法国MBS商学院</option>
+          <option value="英国格林多大学">英国格林多大学</option>
+          <option value="俄联邦总统国家行政学院">俄联邦总统国家行政学院</option>
+          <option value="俄罗斯人民友谊大学">俄罗斯人民友谊大学</option>
+          <option value="永恒大学">永恒大学</option>
+          <option value="太历国立大学">太历国立大学</option>
+          <option value="圣保罗大学">圣保罗大学</option>
+          <option value="国父大学">国父大学</option>
+          <option value="凯迪雷拉大学">凯迪雷拉大学</option>
+          <option value="韩国昌信大学">韩国昌信大学</option>
+          <option value="韩国全南大学">韩国全南大学</option>
+          <option value="泰国格乐大学">泰国格乐大学</option>
+          <option value="泰国博仁大学">泰国博仁大学</option>
+        </select>
+        <input type="text" placeholder="请输入您的姓名" class="user-name">
+        <input type="text" placeholder="请输入您的联系方式" class="user-tel">
+        <input type="submit" value="立即领取" class="mba-sz-btn">
+      </form>
+    </div>
+  </div>
+  <!-- 弹窗-试听课 -->
+  <div class="mba-sz-mask" id="popup2">
+    <div class="masklayer"></div>
+    <div class="mask-cont">
+      <i class="mab-sz-close"></i>
+      <div class="mba-sz-title">
+        <p><span>领取</span>MBA试听课</p>
+        <img src="https://img.thea.cn/public/platform/thea/201912/hbj/mba-sz/images/title_1.png" alt="">
+      </div>
+      <form class="sign-in">
+        <select class="user-con">
+          <option value="请选择您需要领取的院校">请选择您需要领取的院校</option>
+          <option value="法国普瓦提埃大学">法国普瓦提埃大学</option>
+          <option value="加拿大阿尔伯塔大学">加拿大阿尔伯塔大学</option>
+          <option value="加拿大女王大学">加拿大女王大学</option>
+          <option value="华威大学">华威大学</option>
+          <option value="加拿大西三一大学">加拿大西三一大学</option>
+          <option value="法国里昂商学院">法国里昂商学院</option>
+          <option value="美国德克萨斯大学阿灵顿商学院">美国德克萨斯大学阿灵顿商学院</option>
+          <option value="美国杜兰大学">美国杜兰大学</option>
+          <option value="法国巴黎IPAG高等商学院">法国巴黎IPAG高等商学院</option>
+          <option value="法国ICD商学院MBA">法国ICD商学院MBA</option>
+          <option value="法国ISG高等管理学院">法国ISG高等管理学院</option>
+          <option value="法国MBS商学院">法国MBS商学院</option>
+          <option value="英国格林多大学">英国格林多大学</option>
+          <option value="俄联邦总统国家行政学院">俄联邦总统国家行政学院</option>
+          <option value="俄罗斯人民友谊大学">俄罗斯人民友谊大学</option>
+          <option value="永恒大学">永恒大学</option>
+          <option value="太历国立大学">太历国立大学</option>
+          <option value="圣保罗大学">圣保罗大学</option>
+          <option value="国父大学">国父大学</option>
+          <option value="凯迪雷拉大学">凯迪雷拉大学</option>
+          <option value="韩国昌信大学">韩国昌信大学</option>
+          <option value="韩国全南大学">韩国全南大学</option>
+          <option value="泰国格乐大学">泰国格乐大学</option>
+          <option value="泰国博仁大学">泰国博仁大学</option>
         </select>
         <input type="text" placeholder="请输入您的姓名" class="user-name">
         <input type="text" placeholder="请输入您的联系方式" class="user-tel">
@@ -848,7 +924,35 @@
     </div>
   </div>
 
-  <script src="https://img.thea.cn/public/platform/thea/201912/hbj/mba-sz/js/index.js"></script>
+  <script type="text/javascript" src="https://img.thea.cn/public/js/thea.ms.form.js"></script>
+  <script src="https://img.thea.cn/public/platform/thea/201912/hbj/mba-sz/js/index.js?2"></script>
+  <!-- 800咨询软件 -->
+  <script type="text/javascript">
+    var _echatServer = ['v.rainbowred.com'];
+    window._echat = window._echat || function () { (_echat.q = _echat.q || []).push(arguments) }; _echat.l = +new Date;
+    _echat('initParam', { companyId: 378 });
+    _echat('initParam', { echatTag: '竞价-国际' });
+    (function () {
+      var echat = document.createElement('script');
+      echat.type = 'text/javascript';
+      echat.async = true;
+      echat.id = 'echatmodulejs';
+      echat.setAttribute('charset', 'UTF-8');
+      echat.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'vs.rainbowred.com/visitor/echat.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(echat, s);
+    })();
+    function ECHATCustomMiniChat(echatTag, visEvt, lan, metaData, myData, routeEntranceId) {
+      var customObj = {};
+      echatTag && (customObj.echatTag = echatTag);
+      visEvt && (customObj.visEvt = JSON.stringify(visEvt));
+      lan && (customObj.lan = lan);
+      metaData && (customObj.metaData = metaData);
+      myData && (customObj.myData = myData);
+      routeEntranceId && (customObj.routeEntranceId = routeEntranceId);
+      ECHAT.customMiniChat(customObj);
+    }
+  </script>
 </body>
 
 </html>
